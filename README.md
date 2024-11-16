@@ -68,10 +68,10 @@ pip install numpy pydot networkx
 #     count:  number of instances to evaluate
 #     d: number of variables
 #     n: number of samples 
-python run_dges_linear_1DC.py
-python run_dges_linear_2DC.py
-python run_dges_nonlinear_1DC.py
-python run_dges_nonlinear_2DC.py
+python run_dges_linear_1DC.py  # Linear model with only one minimal deterministic cluster (MinDC) 
+python run_dges_linear_2DC.py  # Linear model with two minimal deterministic clusters (MinDCs) 
+python run_dges_nonlinear_1DC.py # Nonlinear model with only one minimal deterministic cluster (MinDC)
+python run_dges_nonlinear_2DC.py # Nonlinear model with two minimal deterministic clusters (MinDCs) 
 ```
 
 ## Acknowledgements

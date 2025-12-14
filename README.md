@@ -40,7 +40,7 @@ If you find it useful, please consider citing:
 
     - Modified edge adding and deleting.
 
-- **Efficient DGES in Implementation**: As you may notice, the first phase could be time-consuming, therefore, we update our code (in the current github version) by: exchanging the first and second phases, so that the search space is smaller for detect MinDCs. 
+- **Efficient DGES in Implementation**: As you may notice, the first phase could be time-consuming, therefore, we update our code (in the current github version) by: exchanging the first and second phases, so that the search space is smaller for detecting MinDCs. 
 
 - **Another Efficient Implementation**: If you are running a large-scale graph, then you may just use GES + modified BIC score, to quickly get an approximate solution. You can skip the MinDC-detection phase and exact-search phase, only running the modified-GES phase without modified-edge-adding-and-deleting step. 
 

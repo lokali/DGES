@@ -158,27 +158,6 @@ A dictionary with:
 - **Another Efficient Implementation**: If you are running a large-scale graph, then you may just use GES + modified BIC score, to quickly get an approximate solution. You can skip the MinDC-detection phase and exact-search phase, only running the modified-GES phase without modified-edge-adding-and-deleting step.
 
 
-## Reproducing Paper Experiments
-
-The original experiment scripts are also included for reproducing results from the paper:
-
-```sh
-# Set up environment
-conda create -n DGES python=3.8
-conda activate DGES
-pip install causal-learn numpy pydot networkx igraph torch
-
-# Run experiments with the original csl-based code
-python run_dges_linear_1DC.py    # Linear model with one MinDC
-python run_dges_linear_2DC.py    # Linear model with two MinDCs
-python run_dges_nonlinear_1DC.py # Nonlinear model with one MinDC
-python run_dges_nonlinear_2DC.py # Nonlinear model with two MinDCs
-
-# Run experiments with causal-learn integration
-python run_dges_causallearn.py
-```
-
-
 ## Acknowledgements
 
 We would like to sincerely thank these related works and open-sourced codes which our work is based on:

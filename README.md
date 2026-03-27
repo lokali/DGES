@@ -23,7 +23,7 @@ This is the implementation of synthetic experiments for the paper **"[On Causal 
     - After: $\log L \propto -\frac{n}{2}(1+ \log |\Sigma+\epsilon|)$;
   - Modified edge adding and deleting:
 
-    - **Forward**: when parent set of $X_j$ determines $X_i$ (i.e., $X_i$ is a deterministic function of PA($X_j$), force add edge $X_i \to X_j$.
+    - **Forward**: when parent set of $X_j$ determines $X_i$ (i.e., $X_i$ is a deterministic function of PA($X_j$), force adding edge $X_i \to X_j$.
     - **Backward**: when $X_i$ and $X_j$ are in the same MinDC, protect the edge from deletion.
 
 ## How to Use
